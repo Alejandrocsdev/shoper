@@ -1,0 +1,14 @@
+.header {
+  height: var(--header-height);
+  background-color: #023047;
+  color: white;
+}
+
+.main {
+  background-color: #219ebc;
+}
+
+.footer {
+  height: var(--footer-height);
+  background-color: #8ecae6;
+}

@@ -1,10 +1,16 @@
-import { useState } from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Layout from './layouts'
+import Home from './pages/Home'
 
 function App() {
   return (
-    <>
-      <h1>Shoper</h1>
-    </>
+    <BrowserRouter basename="/">
+      <Layout>
+        <Routes>
+          <Route index element={<Home />} />
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   )
 }
 
