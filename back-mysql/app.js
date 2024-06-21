@@ -4,11 +4,15 @@ const express = require('express')
 
 const app = express()
 
-const port = Number(process.env.PORT) || 3000
+const port = process.env.PORT || 3000
 
 const cors = require('cors')
 
+const routes = require('./routes')
+
 app.use(cors())
+
+app.use('/api', routes)
 
 app.get('/', (req, res) => res.json({ message: 'MySQL Success' }))
 
