@@ -14,6 +14,6 @@ admin.initializeApp({ credential: admin.credential.cert(serviceAccount) })
 
 app.use(cors())
 
-app.get('/', (req, res) => res.json({ message: 'Success' }))
+app.get('/', (req, res) => res.json({ message: 'Firebase Success' }))
 
 exports.app = functions.https.onRequest(app)
