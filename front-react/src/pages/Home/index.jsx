@@ -12,10 +12,10 @@ function Home() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const firebaseResponse = await axios.get(VITE_FIREBASE_URL)
+      const firebaseResponse = await axios.get(`${VITE_FIREBASE_URL}/messages`)
       setFirebaseData(firebaseResponse.data)
 
-      const expressResponse = await axios.get(VITE_EXPRESS_URL)
+      const expressResponse = await axios.get(`${VITE_EXPRESS_URL}/users`)
       setExpressData(expressResponse.data)
     }
 
