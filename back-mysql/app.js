@@ -14,6 +14,4 @@ app.use(cors())
 
 app.use('/api', routes)
 
-app.get('/', (req, res) => res.json({ message: 'MySQL Success' }))
-
 app.listen(port, () => console.info(`Server running on port: ${port}`))
